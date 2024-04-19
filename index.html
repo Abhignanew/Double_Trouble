@@ -1,4 +1,4 @@
-!DOCTYPE html> 
+
 <html lang="en"> 
   
 <head> 
@@ -52,16 +52,19 @@
                             <input type="email" 
                                    name="email" 
                                    placeholder="Phone, email, or username" 
-                                   id="emailid"
+                                   id="email"
                                    value="" required> 
-  
+                                   <div class="txt_field">
+                                       
+                                    <input type="password" name="password" required id="pass" placeholder="Password">
+                                    <span></span>
+                                </div>
                         </div> 
                         <div class="btn_cont"> 
-                            <button class="btn1_nxt"> 
-                                <a href="#" class="link_next"> 
-                                    Next 
-                                </a> 
+                            <button class="btn1_nxt" id="submit"> 
+                                Login 
                             </button> 
+                            
                             <button class="btn1_forp"> 
                                 <a href="#" class="link_forp"> 
                                     Forget Password ? 
@@ -85,7 +88,7 @@
         </div> 
     </div> 
     <script src="script.js"></script> 
-    <!-- <script type="module" src="register.js" defer></script> -->
+    <script type="module" src="login.js" defer></script>
 </body> 
   
 </html>
