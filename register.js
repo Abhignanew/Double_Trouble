@@ -27,13 +27,13 @@ submit.addEventListener("click",function(event) {
 event.preventDefault()
 const email=document.getElementById('email').value;
   const password=document.getElementById('pass').value;
-alert(5);
+
 const auth = getAuth();
 createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed up 
     const user = userCredential.user;
-    console.log('reached  ')
+    window.location.href="home.html";
     // ...
   })
   .catch((error) => {
