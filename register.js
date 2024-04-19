@@ -21,13 +21,14 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+  const submit=document.getElementById('submit');
   
 submit.addEventListener("click",function(event){
 event.preventDefault()
-const email=document.getElementById("emailid").value;
-  const password=document.getElementById("password").value;
-  const submit=document.getElementById("next");
-
+const email=document.getElementById('email').value;
+  const password=document.getElementById('pass').value;
+alert(5);
+const auth = getAuth();
 createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed up 
