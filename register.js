@@ -17,13 +17,13 @@
     appId: "1:987323861907:web:0c46b4c85007c25de4f666",
     measurementId: "G-J4H8S6GBG6"
   };
-
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
   const submit=document.getElementById('submit');
   
-submit.addEventListener("click",function(event){
+submit.addEventListener("click",function(event) {
 event.preventDefault()
 const email=document.getElementById('email').value;
   const password=document.getElementById('pass').value;
@@ -33,6 +33,7 @@ createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed up 
     const user = userCredential.user;
+    console.log('reached  ')
     // ...
   })
   .catch((error) => {
