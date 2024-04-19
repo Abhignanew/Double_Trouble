@@ -1,0 +1,39 @@
+.main{
+    height:100vh;
+    display:flex;
+    padding:0.5rem;
+}
+.sidebar{
+    height: 700px;
+    background-color: black;
+    width:100px;
+
+}
+
+
+div i{
+    color:white;
+    height: 60px;
+    width:60px;
+}
+.home1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+ .home1 h2{
+    color:black;
+}
+.home1 i{
+    color:black;
+}
+.posts img{
+   height:100px;
+   width:100px;
+   margin-right: 10px;
+   border-radius: 50%;
+
+}
+.posts p i{
+    color:black;
+}
